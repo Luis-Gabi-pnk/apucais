@@ -1,12 +1,16 @@
+body{
+   background-color: gold;
+}
 .gradecanguru{
     display: grid;
     grid-template-columns: repeat(3,33.3%);
     grid-template-rows: repeat (3,auto);
     gap: 0px;
+    height: 1000px;
 }
 header{
     height: 250px;
-    color: brown;
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/11/canguru-guitarrista.png?w=731);
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -14,18 +18,47 @@ header{
 }
 main{
     height: 500px;
-    color: chocolate;
+    background-color: chocolate;
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
 }
-footer{
+.superpe{
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    grid-template-rows: repeat(1,auto);
+    gap: 0;
+}
+.superpe .esquerda{
     height: 250px;
-    color: blue;
+    background-color: aqua;
     grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.superpe .centro{
+    background-color: beige;
+    height: 250px;
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.superpe .direita{
+    height: 250px;
+    background-color: black;
+    grid-column-start:3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
-    
+}
+
+
+
+h1{
+    margin-left: 49%;
+    margin-top:6%;
+    font-size: 50px;
 }
